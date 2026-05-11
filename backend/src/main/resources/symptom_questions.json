@@ -1,0 +1,91 @@
+[
+  {
+    "step": 1,
+    "questionKo": "어디가 아프세요?",
+    "questionJa": "どの部位が痛みますか？",
+    "type": "multi",
+    "options": [
+      {"code": "head", "labelKo": "머리", "labelJa": "頭(あたま)"},
+      {"code": "face", "labelKo": "얼굴/코/입/귀", "labelJa": "顔(目/鼻/口/耳)"},
+      {"code": "neck", "labelKo": "목·喉", "labelJa": "首・喉"},
+      {"code": "shoulder", "labelKo": "어깨·팔·손", "labelJa": "肩・腕・手"},
+      {"code": "chest", "labelKo": "가슴", "labelJa": "胸"},
+      {"code": "abdomen", "labelKo": "배", "labelJa": "お腹"},
+      {"code": "back", "labelKo": "등·허리", "labelJa": "背中・腰"},
+      {"code": "leg", "labelKo": "다리·발", "labelJa": "脚・足"},
+      {"code": "skin", "labelKo": "피부", "labelJa": "皮膚"},
+      {"code": "whole", "labelKo": "전신·발열", "labelJa": "全身・発熱"}
+    ]
+  },
+  {
+    "step": 2,
+    "questionKo": "정확히 어디가 아프세요?",
+    "questionJa": "どこが痛いですか？",
+    "type": "single",
+    "options": [
+      {"code": "ruq", "labelKo": "우상복부", "labelJa": "右上腹部"},
+      {"code": "epigastric", "labelKo": "명치", "labelJa": "みぞおち"},
+      {"code": "luq", "labelKo": "좌상복부", "labelJa": "左上腹部"},
+      {"code": "rflank", "labelKo": "우옆구리", "labelJa": "右脇腹"},
+      {"code": "umbilical", "labelKo": "배꼽 주변", "labelJa": "おへその辺り"},
+      {"code": "lflank", "labelKo": "좌옆구리", "labelJa": "左脇腹"},
+      {"code": "rlq", "labelKo": "우하복부", "labelJa": "右下腹部"},
+      {"code": "lower", "labelKo": "하복부", "labelJa": "下腹部"},
+      {"code": "llq", "labelKo": "좌하복부", "labelJa": "左下腹部"}
+    ]
+  },
+  {
+    "step": 3,
+    "questionKo": "얼마나 아프세요?",
+    "questionJa": "どのくらい痛いですか？",
+    "type": "single",
+    "options": [
+      {"code": "1", "labelKo": "매우 약함", "labelJa": "とても弱い"},
+      {"code": "2", "labelKo": "약함", "labelJa": "弱い"},
+      {"code": "3", "labelKo": "보통", "labelJa": "普通"},
+      {"code": "4", "labelKo": "강함", "labelJa": "強い"},
+      {"code": "5", "labelKo": "참을 수 없음", "labelJa": "耐えられない"}
+    ]
+  },
+  {
+    "step": 4,
+    "questionKo": "언제부터 아프세요?",
+    "questionJa": "いつから痛いですか？",
+    "type": "single",
+    "options": [
+      {"code": "h1", "labelKo": "1시간 이내", "labelJa": "1時間以内"},
+      {"code": "h1_6", "labelKo": "1~6시간", "labelJa": "1〜6時間"},
+      {"code": "h6_24", "labelKo": "6~24시간", "labelJa": "6〜24時間"},
+      {"code": "d1", "labelKo": "1일 이상", "labelJa": "1日以上"}
+    ]
+  },
+  {
+    "step": 5,
+    "questionKo": "같이 있는 증상이 있나요?",
+    "questionJa": "一緒にある症状は？",
+    "type": "multi",
+    "options": [
+      {"code": "fever", "labelKo": "발열", "labelJa": "発熱"},
+      {"code": "vomiting", "labelKo": "구토", "labelJa": "嘔吐"},
+      {"code": "nausea", "labelKo": "메스꺼움", "labelJa": "吐き気"},
+      {"code": "diarrhea", "labelKo": "설사", "labelJa": "下痢"},
+      {"code": "blood_stool", "labelKo": "혈변", "labelJa": "血便"},
+      {"code": "chills", "labelKo": "오한", "labelJa": "寒気"},
+      {"code": "cold_sweat", "labelKo": "식은땀", "labelJa": "冷や汗"},
+      {"code": "jaundice", "labelKo": "황달", "labelJa": "黄疸"},
+      {"code": "none", "labelKo": "없음", "labelJa": "該当なし"}
+    ]
+  },
+  {
+    "step": 6,
+    "questionKo": "해당되는 것이 있나요?",
+    "questionJa": "当てはまるものは？",
+    "type": "multi",
+    "options": [
+      {"code": "unable_to_walk", "labelKo": "걷기 힘든 통증", "labelJa": "歩けないほどの痛み"},
+      {"code": "pregnancy", "labelKo": "임신 가능성", "labelJa": "妊娠の可能性"},
+      {"code": "confusion", "labelKo": "의식이 흐릿함", "labelJa": "意識がぼんやりする"},
+      {"code": "none", "labelKo": "없음", "labelJa": "該当なし"}
+    ]
+  }
+]

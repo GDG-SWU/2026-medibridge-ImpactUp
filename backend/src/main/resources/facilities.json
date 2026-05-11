@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "nameKo": "명동 건강약국",
+    "nameJa": "明洞 健康薬局",
+    "addressKo": "서울특별시 중구 명동6나길 27",
+    "addressJa": "ソウル特別市 中区 明洞6ナギル 27",
+    "phone": "02-1234-5678",
+    "hours": "09:00 - 22:00",
+    "isOpen": true,
+    "is24Hours": false,
+    "lat": 37.5636,
+    "lng": 126.9869
+  },
+  {
+    "id": 2,
+    "nameKo": "강남 센트럴 약국",
+    "nameJa": "江南セントラル薬局",
+    "addressKo": "서울특별시 강남구 테헤란로 152",
+    "addressJa": "ソウル特別市 江南区 テヘラン路 152",
+    "phone": "02-2345-6789",
+    "hours": "10:00 - 20:00",
+    "isOpen": false,
+    "is24Hours": false,
+    "lat": 37.5000,
+    "lng": 127.0368
+  },
+  {
+    "id": 3,
+    "nameKo": "24시간 홍대 약국",
+    "nameJa": "24時間 弘大薬局",
+    "addressKo": "서울특별시 마포구 홍화로 156",
+    "addressJa": "ソウル特別市 麻浦区 弘花路 156",
+    "phone": "02-3456-7890",
+    "hours": "24시간",
+    "isOpen": true,
+    "is24Hours": true,
+    "lat": 37.5563,
+    "lng": 126.9236
+  }
+]
