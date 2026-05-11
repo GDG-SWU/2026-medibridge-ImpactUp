@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "category": "food_poisoning",
+    "titleKo": "식중독 의심 (복부 통증, 구토)",
+    "titleJa": "食中毒の疑い（上腹部の痛み・嘔吐）",
+    "patientInfoLabelKo": "환자 정보",
+    "patientInfoLabelJa": "患者情報",
+    "nationalityKo": "일본인 / 일본어 사용자",
+    "nationalityJa": "日本人 / 日本語",
+    "allergyLabelKo": "알레르기",
+    "allergyLabelJa": "アレルギー",
+    "medicationLabelKo": "복용 중인 약",
+    "medicationLabelJa": "服用中のお薬",
+    "durationLabelKo": "지속 시간",
+    "durationLabelJa": "持続時間",
+    "requestKo": "이 정보를 고려하여 안전한 약을 추천해 주세요.",
+    "requestJa": "この情報を確認して、安全な薬をおすすめください。"
+  }
+]
