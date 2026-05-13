@@ -1,0 +1,50 @@
+{
+  "possibleCondition": "Acute gastroenteritis or norovirus-related gastrointestinal infection",
+  "koreanCondition": "급성 위장염 또는 노로바이러스 관련 장염 가능성",
+  "severity": "moderate",
+  "confidence": "medium",
+  "summary": "The symptoms may be related to acute gastroenteritis. Visiting a pharmacy is recommended first if there are no red-flag symptoms.",
+  "reason": [
+    "The user reports abdominal cramping and nausea.",
+    "The pain score is 7 out of 10.",
+    "Chills are present.",
+    "Norovirus is currently common in Korea during winter.",
+    "No red-flag symptoms were reported."
+  ],
+  "recommendedOption": "pharmacy",
+  "options": [
+    {
+      "type": "self-care",
+      "priority": 2,
+      "title": "Self-care",
+      "description": "Drink water slowly, rest, and avoid spicy or greasy foods."
+    },
+    {
+      "type": "pharmacy",
+      "priority": 1,
+      "title": "Visit a pharmacy",
+      "description": "Consult a pharmacist and show your allergy and medication information."
+    },
+    {
+      "type": "hospital",
+      "priority": 3,
+      "title": "Visit a hospital",
+      "description": "Visit a hospital immediately if high fever, blood in stool, severe dehydration, persistent vomiting, or worsening pain occurs."
+    }
+  ],
+  "warningSigns": [
+    "blood in stool",
+    "black stool",
+    "high fever",
+    "severe dehydration",
+    "persistent vomiting",
+    "loss of consciousness",
+    "breathing difficulty",
+    "worsening abdominal pain"
+  ],
+  "safetyNotes": [
+    "Do not take ibuprofen because the user has an ibuprofen allergy.",
+    "Consult a pharmacist before taking medicine because the user is currently taking GERD medication."
+  ],
+  "disclaimer": "This is not a medical diagnosis. Please consult a pharmacist or doctor if symptoms worsen."
+}

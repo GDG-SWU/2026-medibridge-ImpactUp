@@ -1,0 +1,148 @@
+[
+  {
+    "caseId": "TC_001_mild_self_care",
+    "description": "Mild abdominal discomfort without red flags",
+    "input": {
+      "symptomInput": {
+        "bodyPart": "abdomen",
+        "symptomText": "배가 조금 불편하고 약간 메스꺼워요",
+        "painScore": 2,
+        "duration": "1 hour",
+        "additionalSymptoms": ["slight nausea"],
+        "redFlags": {
+          "bloodInStool": false,
+          "blackStool": false,
+          "highFever": false,
+          "severeDehydration": false,
+          "persistentVomiting": false,
+          "lossOfConsciousness": false,
+          "breathingDifficulty": false,
+          "pregnancyRelatedPain": false,
+          "worseningOver24Hours": false
+        }
+      }
+    },
+    "expectedOutput": {
+      "severity": "mild",
+      "recommendedOption": "self-care"
+    }
+  },
+  {
+    "caseId": "TC_002_moderate_pharmacy",
+    "description": "Prototype scenario: abdominal pain, nausea, chills, pain score 7",
+    "input": {
+      "symptomInput": {
+        "bodyPart": "abdomen",
+        "symptomText": "속이 너무 울렁거리고 배가 뒤틀리는 것 같아요",
+        "painScore": 7,
+        "duration": "2 hours",
+        "additionalSymptoms": ["nausea", "chills"],
+        "redFlags": {
+          "bloodInStool": false,
+          "blackStool": false,
+          "highFever": false,
+          "severeDehydration": false,
+          "persistentVomiting": false,
+          "lossOfConsciousness": false,
+          "breathingDifficulty": false,
+          "pregnancyRelatedPain": false,
+          "worseningOver24Hours": false
+        }
+      }
+    },
+    "expectedOutput": {
+      "severity": "moderate",
+      "recommendedOption": "pharmacy"
+    }
+  },
+  {
+    "caseId": "TC_003_severe_hospital",
+    "description": "Severe abdominal pain with high fever and dehydration",
+    "input": {
+      "symptomInput": {
+        "bodyPart": "abdomen",
+        "symptomText": "배가 너무 아프고 열이 많이 나며 탈수 증상이 있어요",
+        "painScore": 8,
+        "duration": "10 hours",
+        "additionalSymptoms": ["high fever", "dehydration"],
+        "redFlags": {
+          "bloodInStool": false,
+          "blackStool": false,
+          "highFever": true,
+          "severeDehydration": true,
+          "persistentVomiting": false,
+          "lossOfConsciousness": false,
+          "breathingDifficulty": false,
+          "pregnancyRelatedPain": false,
+          "worseningOver24Hours": false
+        }
+      }
+    },
+    "expectedOutput": {
+      "severity": "severe",
+      "recommendedOption": "hospital"
+    }
+  },
+  {
+    "caseId": "TC_004_emergency_room",
+    "description": "Emergency symptoms with breathing difficulty and loss of consciousness",
+    "input": {
+      "symptomInput": {
+        "bodyPart": "general",
+        "symptomText": "숨쉬기가 어렵고 의식이 흐려지는 것 같아요",
+        "painScore": 9,
+        "duration": "30 minutes",
+        "additionalSymptoms": ["breathing difficulty", "confusion"],
+        "redFlags": {
+          "bloodInStool": false,
+          "blackStool": false,
+          "highFever": false,
+          "severeDehydration": false,
+          "persistentVomiting": false,
+          "lossOfConsciousness": true,
+          "breathingDifficulty": true,
+          "pregnancyRelatedPain": false,
+          "worseningOver24Hours": false
+        }
+      }
+    },
+    "expectedOutput": {
+      "severity": "emergency",
+      "recommendedOption": "emergency-room"
+    }
+  },
+  {
+    "caseId": "TC_005_allergy_safety",
+    "description": "Ibuprofen allergy should trigger safety warning",
+    "input": {
+      "userProfile": {
+        "allergies": ["ibuprofen"],
+        "currentMedications": ["GERD medication"],
+        "medicalConditions": ["GERD"]
+      },
+      "symptomInput": {
+        "bodyPart": "abdomen",
+        "symptomText": "복통과 오한이 있어요",
+        "painScore": 6,
+        "duration": "2 hours",
+        "additionalSymptoms": ["abdominal pain", "chills"],
+        "redFlags": {
+          "bloodInStool": false,
+          "blackStool": false,
+          "highFever": false,
+          "severeDehydration": false,
+          "persistentVomiting": false,
+          "lossOfConsciousness": false,
+          "breathingDifficulty": false,
+          "pregnancyRelatedPain": false,
+          "worseningOver24Hours": false
+        }
+      }
+    },
+    "expectedOutput": {
+      "severity": "moderate",
+      "recommendedOption": "pharmacy",
+      "safetyNotesShouldInclude": ["ibuprofen allergy", "GERD medication"]
+    }
+  }
+]

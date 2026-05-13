@@ -1,0 +1,47 @@
+{
+  "userProfile": {
+    "userId": "sato_001",
+    "age": 30,
+    "gender": "female",
+    "nationality": "Japan",
+    "language": "ja",
+    "allergies": ["ibuprofen"],
+    "currentMedications": ["GERD medication"],
+    "medicalConditions": ["GERD"],
+    "insuranceStatus": "uninsured"
+  },
+  "symptomInput": {
+    "bodyPart": "abdomen",
+    "symptomText": "속이 너무 울렁거리고 배가 뒤틀리는 것 같아요",
+    "painScore": 7,
+    "duration": "2 hours",
+    "additionalSymptoms": ["chills", "nausea"],
+    "redFlags": {
+      "bloodInStool": false,
+      "blackStool": false,
+      "highFever": false,
+      "severeDehydration": false,
+      "persistentVomiting": false,
+      "lossOfConsciousness": false,
+      "breathingDifficulty": false,
+      "pregnancyRelatedPain": false,
+      "worseningOver24Hours": false
+    }
+  },
+  "localHealthContext": {
+    "country": "Korea",
+    "city": "Seoul",
+    "district": "Myeongdong",
+    "season": "winter",
+    "outbreak": {
+      "disease": "norovirus",
+      "status": "warning",
+      "description": "Norovirus infections are currently common during winter in Korea."
+    }
+  },
+  "userPreference": {
+    "preferredAction": null,
+    "preferredLanguageForExplanation": "ja"
+  }
+}
+
