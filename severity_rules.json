@@ -1,0 +1,76 @@
+{
+  "mild": {
+    "description": "Mild symptoms with low immediate risk.",
+    "criteria": {
+      "painScoreRange": [1, 3],
+      "possibleSymptoms": [
+        "mild indigestion",
+        "slight nausea",
+        "minor abdominal discomfort"
+      ],
+      "redFlagsRequired": false,
+      "emergencySignsRequired": false
+    },
+    "recommendedOption": "self-care"
+  },
+
+  "moderate": {
+    "description": "Moderate symptoms that may require pharmacy consultation.",
+    "criteria": {
+      "painScoreRange": [4, 7],
+      "possibleSymptoms": [
+        "abdominal cramping",
+        "nausea",
+        "vomiting",
+        "diarrhea",
+        "chills"
+      ],
+      "redFlagsRequired": false,
+      "emergencySignsRequired": false
+    },
+    "recommendedOption": "pharmacy"
+  },
+
+  "severe": {
+    "description": "Severe symptoms requiring hospital visit.",
+    "criteria": {
+      "painScoreRange": [8, 10],
+      "possibleSymptoms": [
+        "high fever",
+        "persistent vomiting",
+        "worsening abdominal pain",
+        "dehydration",
+        "symptoms lasting more than 24 hours"
+      ],
+      "redFlagsRequired": true,
+      "emergencySignsRequired": false
+    },
+    "recommendedOption": "hospital"
+  },
+
+  "emergency": {
+    "description": "Emergency symptoms requiring immediate emergency room visit or calling 119 in Korea.",
+    "criteria": {
+      "painScoreRange": [9, 10],
+      "emergencySymptoms": [
+        "loss of consciousness",
+        "breathing difficulty",
+        "severe chest pain",
+        "severe allergic reaction",
+        "swelling of face or throat",
+        "continuous bloody stool",
+        "black stool with dizziness",
+        "severe dehydration with confusion",
+        "uncontrollable vomiting",
+        "sudden extreme abdominal pain",
+        "seizure"
+      ],
+      "emergencySignsRequired": true
+    },
+    "recommendedOption": "emergency-room",
+    "emergencyAction": {
+      "callNumber": "119",
+      "message": "Call 119 or go to the nearest emergency room immediately."
+    }
+  }
+}
