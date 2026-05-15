@@ -1,45 +1,39 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, {useState} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import SplashScreen from './src/screens/SplashScreen';
+import OnboardingScreen from './src/screens/onboarding/OnboardingScreen';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
+  const [isSplashFinished, setIsSplashFinished] = useState(false);
+  const [isOnboardingFinished, setIsOnboardingFinished] = useState(false);
 
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
-}
+  if (!isSplashFinished) {
+    return <SplashScreen onFinish={() => setIsSplashFinished(true)} />;
+  }
 
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
+  if (!isOnboardingFinished) {
+    return <OnboardingScreen onFinish={() => setIsOnboardingFinished(true)} />;
+  }
 
   return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
+  <View style={styles.container}>
+    <Text style={styles.text}>홈 화면 들어갈 자리</Text>
+  </View>
+);
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: '700',
   },
 });
-
-export default App;
