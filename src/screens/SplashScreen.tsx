@@ -21,6 +21,7 @@ const SplashScreen = ({onFinish}: SplashScreenProps) => {
   const sy = (value: number) => (height / BASE_HEIGHT) * value;
 
   useEffect(() => {
+
     const timer = setTimeout(() => {
       onFinish?.();
     }, 2000);
