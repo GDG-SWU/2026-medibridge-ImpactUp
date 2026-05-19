@@ -84,8 +84,8 @@ public class DiagnoseService {
 
     private String buildPrompt(DiagnoseRequest request) {
 
-        int painScore = request.getSymptomInput().getPainScore();
-        List<String> symptoms = request.getSymptomInput().getAdditionalSymptoms();
+        int painScore = request.getPainLevel();
+        List<String> symptoms = request.getSymptoms();
 
         return """
                 You are a medical guidance assistant for foreign travelers in Korea.
@@ -138,7 +138,7 @@ public class DiagnoseService {
 
     private DiagnoseResponse createMockModerateResponse(DiagnoseRequest request) {
 
-        int painScore = request.getSymptomInput().getPainScore();
+        int painScore = request.getPainLevel();
 
         return new DiagnoseResponse(
                 "Acute gastroenteritis or norovirus-related gastrointestinal infection",
