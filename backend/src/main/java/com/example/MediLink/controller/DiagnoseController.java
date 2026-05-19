@@ -15,7 +15,7 @@ public class DiagnoseController {
     }
 
     @PostMapping("/api/diagnose")
-    public DiagnoseResponse diagnose(@RequestBody DiagnoseRequest request) {
+    public DiagnoseResponse diagnose(@RequestBody DiagnoseRequest request) throws Exception {
         return diagnoseService.diagnose(request);
     }
 }

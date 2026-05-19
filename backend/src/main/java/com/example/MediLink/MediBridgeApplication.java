@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MediLinkApplication {
+public class MediBridgeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MediLinkApplication.class, args);
+		SpringApplication.run(MediBridgeApplication.class, args);
 	}
 
 }
